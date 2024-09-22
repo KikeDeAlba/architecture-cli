@@ -10,6 +10,13 @@
   "bin": {
     "narch": "dist/clis/narch/index.js"
   },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KikeDeAlba/architecture-cli"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
