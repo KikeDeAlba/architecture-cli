@@ -1,11 +1,12 @@
 {
   "name": "architecture-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre:publish": "pnpm format && pnpm build"
   },
   "bin": {
     "narch": "dist/clis/narch/index.js"
