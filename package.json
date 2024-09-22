@@ -6,6 +6,7 @@
     "build": "tsc",
     "format": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish",
     "pre:publish": "pnpm format && pnpm build"
   },
   "bin": {
