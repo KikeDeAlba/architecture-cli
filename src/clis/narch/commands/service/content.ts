@@ -1,5 +1,4 @@
 import { styleCode } from "../../../../utils/formatters/style-code";
-import { extractContentFromFile } from "../../../../utils/fs/files";
 import { CreateServiceProps, ServiceName } from "./service.types";
 
 export const formatServiceName = (serviceName: ServiceName) =>
