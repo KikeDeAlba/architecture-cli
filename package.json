@@ -4,10 +4,11 @@
   "description": "",
   "scripts": {
     "build": "tsc",
+    "prebuild": "pnpm format",
     "format": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "npm publish",
-    "pre:publish": "pnpm format && pnpm build"
+    "prepublish": "pnpm format && pnpm build"
   },
   "bin": {
     "narch": "dist/clis/narch/index.js"
@@ -28,6 +29,8 @@
   },
   "devDependencies": {
     "@nestjs/common": "10.4.3",
-    "@types/node": "22.5.5"
+    "@nestjs/config": "3.2.3",
+    "@types/node": "22.5.5",
+    "nestjs-pino": "4.1.0"
   }
 }
